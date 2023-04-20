@@ -17,40 +17,41 @@
 </head>
 <body>
     {% block menu %}
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
-        <div class="container">
-            <a href="" class="navbar-brand">
-                <img src="/static/favicon/favicon.png" alt="Bootstrap" width="50" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto mb-2 me-5">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link me-3">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link me-3">Блог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link me-3">Контакты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link me-3">Вход</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Регистрация</a>
-                    </li>
-                </ul>
-                <form action="" class="d-flex">
-                    <input type="search" placeholder="Поиск" class="form-control me-2">
-                    <button class="btn btn-light">Поиск</button>
-                </form>
-            </div>
-        </div>
-
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <img src="/static/favicon/favicon.png" alt="Bootstrap" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 me-5">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link me-3">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link me-3">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link me-3">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link me-3">Вход</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Регистрация</a>
+                        </li>
+                    </ul>
+                    <form action="" class="d-flex">
+                        <input type="search" placeholder="Поиск" class="form-control me-2">
+                        <button class="btn btn-light">Поиск</button>
+                    </form>
+                </div>
+            </div>    
+        </nav>
+    </header>   
     {% endblock menu %}
 
 
