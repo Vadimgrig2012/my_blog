@@ -1,17 +1,49 @@
-*{
-    margin: 0;
-    padding: 0;
+html {
+  font-size: 16px;
 }
 
-html, body{
-    height: 100%;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  /* color: #000; */
+  background: #fff;
+  min-width: 320px;
 }
 
-.carousel {
-    margin-top: 75px; /* height of the fixed-top navbar */
-  }
+.top-menu::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+  transition: all .3s;
+  transform: scale(0);
+}
 
-  .carousel-item img {
-    height: 400px; /* задаем высоту для изображений */
-    object-fit: cover; /* заполняем контейнер изображением */
-  }
+.top-menu:hover::after {
+  transform: scale(1);
+}
+
+
+.modal {
+  z-index: 1030; /* lower than the default value of 1040 */
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* section {
+  padding: 50px 0;
+} */
+
+/* .carousel {
+    margin-top: 75px; 
+} */
+
+  /* .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  } */
